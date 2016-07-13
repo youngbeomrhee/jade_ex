@@ -1,0 +1,24 @@
+
+h1 반복문 예제
+
+p
+    h3 for
+    ul
+    - for (var x=0; x<3; x++)
+        div item
+
+p
+    h3 each in
+    - list = ['a', 'b', 'c', 'd', 'e']
+    ul
+        each item, i in list
+            li(value=i)=item
+
+p
+    h3 for in else
+    - books = ['a', 'b', 'c', 'd', 'e']
+    ul
+        for book in books
+            li=book
+        else
+            li sorry, no books!

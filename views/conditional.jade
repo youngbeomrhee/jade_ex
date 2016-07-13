@@ -1,0 +1,22 @@
+
+- var user = { description: 'foo bar baz'}
+- var authorised = false
+
+#user
+    h2 Description
+    if user.description
+        p.description=user.description
+    else if authorised
+        p.description.
+            authorised
+            is true
+    else
+        p.description User has no description
+
+-
+    user = {
+        isAnonymous: false,
+        name: 'daniel'
+    }
+if !user.isAnonymous
+    p You're logged in as #{user.name}
